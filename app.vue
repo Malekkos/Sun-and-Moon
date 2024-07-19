@@ -15,6 +15,7 @@ What needs to be here:
     <div>
       <p>Placeholder Navbar</p>
     </div>
+    <NuxtPage />
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
     <div>
