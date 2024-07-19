@@ -1,0 +1,7 @@
+Currently, no fonts. Similary, I have never actually heard of font files, aka: .woff . Pretty Cool
+
+A quick check and i found a site that has a ton, like 120,000+
+
+find here: https://www.fontspace.com/new/fonts
+
+or... its ttf files? I dont really understand, but they should work just fine

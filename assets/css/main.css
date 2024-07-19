@@ -1,7 +1,15 @@
 /* 
 This will be the... main css file? Ultimately, I'm not sure exactly how tailwind works, so
 cont. we'll see how this pans out haha.
+So, from what I can see, you would need to directly import the styles in script or style, using one of two methods:
+ import '~/assets/css/something.css' in <script>
+ OR @import url("~/assets/css/something.css") in <style>
+I'll likely use style, just makes more sense.
 
+And if i had read even five more inches, I would have seen we have already done that. Butttttt...
+I would honestly prefer seperate stylesheets, with different directories. My pages become very long and VERY
+cont. Messy. So, it would probably be fine to leave as is right now, this will be the file for the homepage.
+cont. Then, we will have to import the other styles from under different file names.
 
 */
 
