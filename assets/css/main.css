@@ -1,0 +1,11 @@
+/* 
+This will be the... main css file? Ultimately, I'm not sure exactly how tailwind works, so
+cont. we'll see how this pans out haha.
+
+
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities
