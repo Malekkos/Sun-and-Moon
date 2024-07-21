@@ -12,6 +12,20 @@ Issues:
 
 -->
 
+<!-- 
+Another useful feature, making changes in the head statement. We can use this to change the 
+cont. title of the website to reflect that book name. We would do this through the useHead({})
+cont. composable function
+Something that cna go into useHead is titleTemplate. This seems to take the title originally and 
+cont. make some changes on it, then change the title to the changes. We could make it so that the title
+cont. is the book name, and then make it so that the resulting string/title would be the chapter you are on.
+cont. Like so:
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Chapter X` : 'book name here';
+  }
+
+-->
+
 <template>
   <div>
     
