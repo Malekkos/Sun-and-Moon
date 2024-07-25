@@ -25,3 +25,7 @@ Tech Used ~
  future integration for nuxt 3, Even I cant say that I should implement it now when I have no idea what I'm even doing with vue.
 
  The above is no longer true, we can start with nuxt
+
+
+
+ Can maybe implement transitions later. not a big deal right now
