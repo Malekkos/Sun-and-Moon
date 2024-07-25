@@ -1,5 +1,4 @@
 <!-- 
- 
 This should be the template page for the dynamic route system.
 It would function(at least, as of now) by taking the param id/book name, passing that info
 cont. to the database and searching it from there. This would be in the form of a call. Then,
@@ -25,6 +24,17 @@ cont. Like so:
   }
 
 -->
+
+<!-- 
+Another useful feature, useState. These are created in the script tag, and while having the same general meaning
+cont. as React state, its executed differently. First, you would define the variable name for state, follow with
+cont. invoking the useState ref, and provide it some params. The params are a unique key name to... reference it,
+cont. I think? and finally, you can provide a function or value for an initial value it can hold. Below is an example
+  const counter = useState('counter', () => Math.round(Math.random() * 1000))
+The above can be accessed by using 'counter', and contains the reactive state currently available. I'm still not sure 
+cont. if the key is necessary, nor am I sure what it really does.
+-->
+
 
 <template>
   <div>
