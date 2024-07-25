@@ -50,7 +50,7 @@ cont. would have to use 'onMounted()', and then provide a 'await nextTick()' met
 <template>
   <div>
     <NuxtLayout name="reading">
-
+      {{ $route.params.chapter }}
     </NuxtLayout>
   </div>
 </template>

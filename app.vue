@@ -36,6 +36,7 @@ cont. can do the following:
   await callOnce(website.fetch)
 We can then access the data using website.name or website.description
 -->
+
 <template>
   <div>
     <div>
