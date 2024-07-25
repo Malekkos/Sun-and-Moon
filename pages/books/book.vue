@@ -35,6 +35,17 @@ The above can be accessed by using 'counter', and contains the reactive state cu
 cont. if the key is necessary, nor am I sure what it really does.
 -->
 
+<!-- 
+Something we will have to use, eventually, is <ClientOnly>. We need to do this because when the site is being pre-rendered
+cont. , we will face issues of needed to render a thousand chapters. When defining <ClientOnly> the chapters will be rendered
+cont. by the user, not by the server. 
+
+Another method I just found was predefining components in the components structure to include client. Hence, it would read
+cont. like: Book-Card.client.vue
+If we do that, they must be imported from #components. Just keep that in mind.
+Also, .client components are only rendered AFTER being mounted. So, in order to change data on a component like this, we 
+cont. would have to use 'onMounted()', and then provide a 'await nextTick()' method inside of 'onMounted()'
+-->
 
 <template>
   <div>
