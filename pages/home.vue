@@ -42,7 +42,9 @@ The above is all inside of our composable.
 
 <template>
   <div>
-    fgdfs
+    <NuxtLayout name="default">
+      
+    </NuxtLayout>
   </div>
 </template>
 

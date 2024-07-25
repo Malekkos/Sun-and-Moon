@@ -49,7 +49,9 @@ cont. would have to use 'onMounted()', and then provide a 'await nextTick()' met
 
 <template>
   <div>
-    
+    <NuxtLayout name="reading">
+
+    </NuxtLayout>
   </div>
 </template>
 
