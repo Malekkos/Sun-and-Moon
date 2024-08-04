@@ -49,7 +49,10 @@ The above is all inside of our composable.
 </template>
 
 <script lang="ts" setup>
-
+  
+  definePageMeta({
+    title: "Home page of Sun & Moon"
+  })
 </script>
 
 <style>

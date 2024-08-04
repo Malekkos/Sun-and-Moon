@@ -17,6 +17,13 @@ cont. can be saved for WAY later.
 </template>
 
 <script lang="ts" setup>
+  const route = useRoute()
+
+  definePageMeta({
+    title: ""
+  })
+
+  route.meta.title = route.params.bookname
 
 </script>
 

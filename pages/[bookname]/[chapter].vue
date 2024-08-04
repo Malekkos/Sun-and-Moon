@@ -9,8 +9,6 @@
 <script lang="ts" setup>
 
   const route = useRoute()
-  console.log(`This is the route chapter: ${route.params.chapter} and this if the route bookname: ${route.params.bookname}`)
-  // let titleName = `${route.params.chapter} of ${route.params.bookname}`
   
   definePageMeta({
     title: "",
