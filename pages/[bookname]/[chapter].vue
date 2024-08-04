@@ -1,3 +1,29 @@
+<template>
+  <div>
+    <NuxtLayout name="reading">
+      {{ $route.params.chapter }}
+    </NuxtLayout>
+  </div>
+</template>
+
+<script lang="ts" setup>
+
+  const route = useRoute()
+  console.log(`This is the route chapter: ${route.params.chapter} and this if the route bookname: ${route.params.bookname}`)
+  // let titleName = `${route.params.chapter} of ${route.params.bookname}`
+  
+  definePageMeta({
+    title: "",
+  })
+  route.meta.title = `${route.params.chapter} of ${route.params.bookname}`
+</script>
+
+<style>
+
+</style>
+
+
+
 <!-- 
 This should be the template page for the dynamic route system.
 It would function(at least, as of now) by taking the param id/book name, passing that info
@@ -46,19 +72,3 @@ If we do that, they must be imported from #components. Just keep that in mind.
 Also, .client components are only rendered AFTER being mounted. So, in order to change data on a component like this, we 
 cont. would have to use 'onMounted()', and then provide a 'await nextTick()' method inside of 'onMounted()'
 -->
-
-<template>
-  <div>
-    <NuxtLayout name="reading">
-      {{ $route.params.chapter }}
-    </NuxtLayout>
-  </div>
-</template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style>
-
-</style>
