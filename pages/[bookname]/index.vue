@@ -7,20 +7,31 @@ Getting into more complicated things like view count, rating, comments
 cont. can be saved for WAY later.
 -->
 
+<!-- 
+  Using the keepalive param in definePageMeta so that It wouldn't need a change of state for a recall.
+  cont. Just have to remember to make the corresponding changes so it doesn't constantly call the api
+  cont constantly. Im thinking a conditional check for if state is currently filled. Navigating to a 
+  cont. page other than chapter and the specific book name should hence wipe state so it can be refilled
+-->
 
-
+<!-- 
+  Super Important one, <NuxtLink>. Its going to be used a whole heck of a lot. We are going to need one
+  cont. for chapter changes, links back to home, links to book browser, Everything.
+-->
 
 <template>
   <div>
     {{ $route.params.bookname }}
   </div>
+  <NuxtLink to="/">IDK</NuxtLink>
 </template>
 
 <script lang="ts" setup>
   const route = useRoute()
 
   definePageMeta({
-    title: ""
+    title: "",
+    keepalive: true,
   })
 
   route.meta.title = route.params.bookname
