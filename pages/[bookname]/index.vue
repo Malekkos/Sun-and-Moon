@@ -17,13 +17,17 @@ cont. can be saved for WAY later.
 <!-- 
   Super Important one, <NuxtLink>. Its going to be used a whole heck of a lot. We are going to need one
   cont. for chapter changes, links back to home, links to book browser, Everything.
+
+  Similarily, there is a function to handle dynamic changes just once. at least, I think. Currently, I
+  cont. dont know if like invoking the function onclick would properly work. Maybe, I can pass params
+  cont. onto the function that would let me be able to do that?
 -->
 
 <template>
   <div>
     {{ $route.params.bookname }}
   </div>
-  <NuxtLink to="/">IDK</NuxtLink>
+  <button @click="navigate(`chapterOne`)" >IDK</button>
 </template>
 
 <script lang="ts" setup>
@@ -33,6 +37,15 @@ cont. can be saved for WAY later.
     title: "",
     keepalive: true,
   })
+
+  function navigate(chapter: string){
+    console.log("navigate ran")
+    console.log(chapter)
+    return navigateTo({
+      path: `/${route.params.bookname}/${chapter}`
+    })
+  }
+
 
   route.meta.title = route.params.bookname
 
