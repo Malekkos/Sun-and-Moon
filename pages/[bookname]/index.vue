@@ -39,8 +39,6 @@ cont. can be saved for WAY later.
   })
 
   function navigate(chapter: string){
-    console.log("navigate ran")
-    console.log(chapter)
     return navigateTo({
       path: `/${route.params.bookname}/${chapter}`
     })
