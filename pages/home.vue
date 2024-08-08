@@ -8,6 +8,7 @@ cont. subpar leadership aside, it has a pretty good homepage IMO.
 -->
 
 <!-- 
+ ~~~~~~~~~~ SeoMeta ~~~~~~~~~~~~
 Another useful feature, useSeoMeta({}). We can use this to define page meanings. Say we use description: "",
 cont. this would show in page results when searching for things. We can also use ogImage:, ogDescription:(think
 cont. like its summarized description), and more.
@@ -15,6 +16,7 @@ We can do the above inline with <Head> elements or <Title> elements, but i prefe
 -->
 
 <!-- 
+ ~~~~~~~ API ~~~~~~~~~~~~~
 Another useful feature, useFetch. Its a built in composable for the script tag, and one we'll use quite a bit.
 cont. It acts as the fetcher for all the data from the server we are going to use. The following is how:
   const { data: count } = await useFetch('/api/count')
