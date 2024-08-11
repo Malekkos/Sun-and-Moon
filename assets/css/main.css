@@ -10,7 +10,12 @@ And if i had read even five more inches, I would have seen we have already done 
 I would honestly prefer seperate stylesheets, with different directories. My pages become very long and VERY
 cont. Messy. So, it would probably be fine to leave as is right now, this will be the file for the homepage.
 cont. Then, we will have to import the other styles from under different file names.
+*/
 
+/* 
+So, finally took a look at the actual documentation. Verdict is... I'm peeved. Didn't realize it was all class based
+cont. styling architecture. Truthfully, I love having massive blocks of CSS; styling is fun. But, I'm committed.
+cont. Will go forward with it, and try to use whats at my fingertips, even if I'm slightly chagrined.
 */
 
 

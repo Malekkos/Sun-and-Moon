@@ -38,16 +38,16 @@ We can then access the data using website.name or website.description
 -->
 
 <template>
-  <div>
-    <div>
       <!-- <p>Placeholder Navbar</p> -->
-    </div>
     <!-- <NuxtLayout /> -->
-    <NuxtPage />
+    <NuxtPage/>
     <NuxtRouteAnnouncer />
     <!-- <NuxtWelcome /> -->
-    <div>
       <!-- <p>Placeholder Footer</p> -->
-    </div>
-  </div>
 </template>
+
+<style lang="postcss">
+  #__nuxt {
+    @apply w-full h-full;
+  }
+</style>

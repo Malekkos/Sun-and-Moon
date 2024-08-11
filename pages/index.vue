@@ -12,7 +12,7 @@ cont. , the way to render it would be /book. NOT /book/index. Index literally me
 
 <template>
   <div>
-    sdfgsdfgsdfg
+    <!-- sdfgsdfgsdfg -->
   </div>
 </template>
 

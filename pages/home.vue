@@ -42,7 +42,6 @@ We can also use transform, which would be when we are 'picking' specific data bu
 The above is all inside of our composable.
   -->
 
-
 <!-- 
 THOUGHTS 8/10/2024 10:50PM:
 Currently, after having a peak at how Nuxt Layout works and defining it in meta, the correct measure seems to be having
@@ -50,8 +49,8 @@ cont. it change on the seperate layouts, and said changes being reflected on the
 cont. level method doing some automated checking, but ultimately, its a time sink with marginal gains to it.
 I'll leave it commented for the time being, if I happen to change my mind while reading documentation  
 -->
+
 <template>
-  <div>
     <NuxtLayout>
       <div id="main">
         <div class="mainWrapper">
@@ -89,20 +88,32 @@ I'll leave it commented for the time being, if I happen to change my mind while 
         </div>
       </div>
     </NuxtLayout>
-  </div>
 </template>
 
 <script lang="ts" setup>
-// import Home from '~/layouts/home.vue';
 
-
-  
   definePageMeta({
     title: "Home page of Sun & Moon",
     layout: "home",
   })
 </script>
 
-<style>
+<style lang="postcss" scoped>
+
+  #main .mainWrapper{
+    @apply w-full;
+  }
+  
+  .bodyWrapper {
+    @apply w-full flex flex-row justify-center;
+  }
+
+  .bodySectionDirecAndUpdates, .bodySectionContent, .bodySectionScroll {
+    @apply w-4/12 flex flex-col flex-nowrap justify-start items-center;
+  }
+
+  .homePageSection {
+    @apply w-6/12 h-28 mt-10 bg-[#EEAC00];
+  }
 
 </style>
