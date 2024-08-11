@@ -15,6 +15,8 @@ Design:
 <template>
   <div>
     <slot />
+    <!-- sdfasd -->
+     defualt layout
   </div>
 </template>
 

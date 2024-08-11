@@ -40,14 +40,14 @@ We can then access the data using website.name or website.description
 <template>
   <div>
     <div>
-      <p>Placeholder Navbar</p>
+      <!-- <p>Placeholder Navbar</p> -->
     </div>
-    <NuxtLayout />
+    <!-- <NuxtLayout /> -->
     <NuxtPage />
     <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <!-- <NuxtWelcome /> -->
     <div>
-      <p>Placeholder Footer</p>
+      <!-- <p>Placeholder Footer</p> -->
     </div>
   </div>
 </template>

@@ -42,18 +42,64 @@ We can also use transform, which would be when we are 'picking' specific data bu
 The above is all inside of our composable.
   -->
 
+
+<!-- 
+THOUGHTS 8/10/2024 10:50PM:
+Currently, after having a peak at how Nuxt Layout works and defining it in meta, the correct measure seems to be having
+cont. it change on the seperate layouts, and said changes being reflected on the pages. It would be nice to have a top
+cont. level method doing some automated checking, but ultimately, its a time sink with marginal gains to it.
+I'll leave it commented for the time being, if I happen to change my mind while reading documentation  
+-->
 <template>
   <div>
-    <NuxtLayout name="default">
-      
+    <NuxtLayout>
+      <div id="main">
+        <div class="mainWrapper">
+          <!-- <div class="logoWrapper"></div> -->
+          <body class="bodyWrapper">
+            <div class="bodySectionDirecAndUpdates">
+              <div id="homePageDirectory">
+                <p>Placeholder for directory field</p>
+              </div>
+              <div id="homePageLatestUpdates">
+                <p>Placeholder for latest updates</p>
+              </div>
+            </div>
+            <main class="bodySectionContent">
+              <div class="homePageSection">
+                <p>Placeholder for Featured</p>
+              </div>
+              <div class="homePageSection">
+                <p>Placeholder for Trending</p>
+              </div>
+              <div class="homePageSection">
+                <p>Placeholder for New Releases</p>
+              </div>
+              <div class="homePageSection">
+                <p>Placeholder for New Authors Titles</p>
+              </div>
+              <div class="homePageSection">
+                <p>Placeholder for Random Books</p>
+              </div>
+            </main>
+            <div class="bodySectionScroll">
+              <p>Placeholder for Scroll</p>
+            </div>
+          </body>
+        </div>
+      </div>
     </NuxtLayout>
   </div>
 </template>
 
 <script lang="ts" setup>
+// import Home from '~/layouts/home.vue';
+
+
   
   definePageMeta({
-    title: "Home page of Sun & Moon"
+    title: "Home page of Sun & Moon",
+    layout: "home",
   })
 </script>
 
