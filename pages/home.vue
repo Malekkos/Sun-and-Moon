@@ -1,4 +1,3 @@
-
 <!-- 
 First page of many!
 This will be home, it will have some jumping off points to other sections of the website, and will
@@ -51,93 +50,111 @@ I'll leave it commented for the time being, if I happen to change my mind while 
 -->
 
 <template>
-    <NuxtLayout>
-      <div id="main">
-        <div class="mainWrapper">
-          <!-- <div class="logoWrapper"></div> -->
-          <body class="bodyWrapper">
-            <div class="bodySectionDirecAndUpdates">
-              <div id="homePageDirectory">
-                <p>Placeholder for directory field</p>
-              </div>
-              <div id="homePageLatestUpdates">
-                <p>Placeholder for latest updates</p>
-              </div>
+  <NuxtLayout>
+    <div id="main">
+      <div class="mainWrapper">
+        <!-- <div class="logoWrapper"></div> -->
+
+        <body class="bodyWrapper">
+          <div class="bodySectionDirecAndUpdates">
+            <div id="homePageDirectory">
+              <p>Placeholder for directory field</p>
             </div>
-            <main class="bodySectionContent">
+            <div id="homePageLatestUpdates">
+              <p>Placeholder for latest updates</p>
+            </div>
+          </div>
+          <main class="bodySectionContent">
+            <div>
+              <header class="bodyHeader">Featured</header>
               <div class="homePageSection">
                 <p class="bodyTextImportant">Placeholder for Featured</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
-              <div class="homePageSection">
+            </div>
+            <div class="homePageSection">
+              <header class="bodyHeader">Trending</header>
+              <div>
                 <p class="bodyTextImportant">Placeholder for Trending</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
-              <div class="homePageSection">
+            </div>
+            <div class="homePageSection">
+              <header class="bodyHeader">New Releases</header>
+              <div>
                 <p class="bodyTextImportant">Placeholder for New Releases</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
-              <div class="homePageSection">
+            </div>
+            <div class="homePageSection">
+              <header class="bodyHeader">New Authors Titles</header>
+              <div>
                 <p class="bodyTextImportant">Placeholder for New Authors Titles</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
-              <div class="homePageSection">
+            </div>
+            <div class="homePageSection">
+              <header class="bodyHeader">Random Books</header>
+              <div>
                 <p class="bodyTextImportant">Placeholder for Random Books</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
-            </main>
-            <div class="bodySectionScroll">
-              <p>Placeholder for Scroll</p>
             </div>
-          </body>
-        </div>
+          </main>
+          <div class="bodySectionScroll">
+            <p>Placeholder for Scroll</p>
+          </div>
+        </body>
       </div>
-    </NuxtLayout>
+    </div>
+  </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
 
-  definePageMeta({
-    title: "Home page of Sun & Moon",
-    layout: "home",
-  })
+definePageMeta({
+  title: "Home page of Sun & Moon",
+  layout: "home",
+})
 </script>
 
 <style lang="postcss" scoped>
+#main .mainWrapper {
+  @apply w-full;
+}
 
-  #main .mainWrapper{
-    @apply w-full;
-  }
-  
-  .bodyWrapper {
-    @apply w-full flex flex-row justify-between;
-  }
+.bodyWrapper {
+  @apply w-full flex flex-row justify-between;
+}
 
-  .bodySectionDirecAndUpdates, .bodySectionContent, .bodySectionScroll {
-    @apply w-4/12 flex flex-col flex-nowrap justify-start items-center;
-  }
+.bodySectionDirecAndUpdates,
+.bodySectionContent,
+.bodySectionScroll {
+  @apply w-4/12 flex flex-col flex-nowrap justify-start items-center;
+}
 
-  .bodySectionContent {
-    @apply w-[60%]
-  }
+.bodySectionContent {
+  @apply w-[60%]
+}
 
-  .homePageSection {
-    @apply w-[45rem] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden;
-  }
+.homePageSection {
+  @apply w-[45rem] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden;
+}
 
-  .bodySectionScroll, .bodySectionDirecAndUpdates {
-    @apply w-[20%];
-  }
+.bodySectionScroll,
+.bodySectionDirecAndUpdates {
+  @apply w-[20%];
+}
 
-  .bodySectionDirecAndUpdates {
-    @apply w-[20rem];
-  }
-  
-  .bodyTextImportant {
-    @apply text-[1.6rem] text-[#832A0D];
-  }
+.bodySectionDirecAndUpdates {
+  @apply w-[20rem];
+}
 
-  .bodyTextSub {
-    @apply text-[0.9rem] text-[#2b200f]
-  }
+.bodyHeader {
+  @apply text-[1.6rem] text-[#832A0D] top-[2rem] relative;
+}
+
+.bodyTextSub {
+  @apply text-[0.9rem] text-[#2b200f]
+}
 </style>
