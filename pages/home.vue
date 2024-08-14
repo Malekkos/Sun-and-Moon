@@ -66,19 +66,24 @@ I'll leave it commented for the time being, if I happen to change my mind while 
             </div>
             <main class="bodySectionContent">
               <div class="homePageSection">
-                <p>Placeholder for Featured</p>
+                <p class="bodyTextImportant">Placeholder for Featured</p>
+                <p class="bodyTextSub">Text for sub</p>
               </div>
               <div class="homePageSection">
-                <p>Placeholder for Trending</p>
+                <p class="bodyTextImportant">Placeholder for Trending</p>
+                <p class="bodyTextSub">Text for sub</p>
               </div>
               <div class="homePageSection">
-                <p>Placeholder for New Releases</p>
+                <p class="bodyTextImportant">Placeholder for New Releases</p>
+                <p class="bodyTextSub">Text for sub</p>
               </div>
               <div class="homePageSection">
-                <p>Placeholder for New Authors Titles</p>
+                <p class="bodyTextImportant">Placeholder for New Authors Titles</p>
+                <p class="bodyTextSub">Text for sub</p>
               </div>
               <div class="homePageSection">
-                <p>Placeholder for Random Books</p>
+                <p class="bodyTextImportant">Placeholder for Random Books</p>
+                <p class="bodyTextSub">Text for sub</p>
               </div>
             </main>
             <div class="bodySectionScroll">
@@ -105,15 +110,34 @@ I'll leave it commented for the time being, if I happen to change my mind while 
   }
   
   .bodyWrapper {
-    @apply w-full flex flex-row justify-center;
+    @apply w-full flex flex-row justify-between;
   }
 
   .bodySectionDirecAndUpdates, .bodySectionContent, .bodySectionScroll {
     @apply w-4/12 flex flex-col flex-nowrap justify-start items-center;
   }
 
-  .homePageSection {
-    @apply w-6/12 h-28 mt-10 bg-[#EEAC00];
+  .bodySectionContent {
+    @apply w-[60%]
   }
 
+  .homePageSection {
+    @apply w-[45rem] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden;
+  }
+
+  .bodySectionScroll, .bodySectionDirecAndUpdates {
+    @apply w-[20%];
+  }
+
+  .bodySectionDirecAndUpdates {
+    @apply w-[20rem];
+  }
+  
+  .bodyTextImportant {
+    @apply text-[1.6rem] text-[#832A0D];
+  }
+
+  .bodyTextSub {
+    @apply text-[0.9rem] text-[#2b200f]
+  }
 </style>
