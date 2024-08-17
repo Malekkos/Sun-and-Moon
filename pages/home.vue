@@ -72,30 +72,30 @@ I'll leave it commented for the time being, if I happen to change my mind while 
                 <p class="bodyTextSub">Text for sub</p>
               </div>
             </div>
-            <div class="homePageSection">
+            <div>
               <header class="bodyHeader">Trending</header>
-              <div>
+              <div class="homePageSection">
                 <p class="bodyTextImportant">Placeholder for Trending</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
             </div>
-            <div class="homePageSection">
+            <div>
               <header class="bodyHeader">New Releases</header>
-              <div>
+              <div class="homePageSection">
                 <p class="bodyTextImportant">Placeholder for New Releases</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
             </div>
-            <div class="homePageSection">
+            <div>
               <header class="bodyHeader">New Authors Titles</header>
-              <div>
+              <div class="homePageSection">
                 <p class="bodyTextImportant">Placeholder for New Authors Titles</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
             </div>
-            <div class="homePageSection">
+            <div>
               <header class="bodyHeader">Random Books</header>
-              <div>
+              <div class="homePageSection">
                 <p class="bodyTextImportant">Placeholder for Random Books</p>
                 <p class="bodyTextSub">Text for sub</p>
               </div>
