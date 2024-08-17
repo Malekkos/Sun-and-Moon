@@ -67,9 +67,11 @@ cont. to see something like that.
 
         <body class="bodyWrapper">
           <div class="bodySectionDirecAndUpdates">
-            <div id="homePageDirectory">
-              <p>Placeholder for directory field</p>
-            </div>
+            <nav id="homePageDirectory">
+              <NuxtLink to="/home">Home</NuxtLink>
+              <NuxtLink to="/profile.vue">Profile</NuxtLink>
+              <NuxtLink to="/search.vue">Find a book</NuxtLink>
+            </nav>
             <div id="homePageLatestUpdates">
               <p>Placeholder for latest updates</p>
             </div>
@@ -157,7 +159,7 @@ definePageMeta({
 }
 
 .bodySectionDirecAndUpdates {
-  @apply w-[20rem];
+  @apply flex w-[20rem] flex-col items-start ml-2;
 }
 
 .bodyHeader {
@@ -165,6 +167,10 @@ definePageMeta({
 }
 
 .bodyTextSub {
-  @apply text-[0.9rem] text-[#2b200f]
+  @apply text-[0.9rem] text-[#2b200f];
+}
+
+#homePageDirectory {
+  @apply flex bg-[#ffd03b] w-[10rem] flex-col;
 }
 </style>
