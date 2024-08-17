@@ -47,6 +47,16 @@ Currently, after having a peak at how Nuxt Layout works and defining it in meta,
 cont. it change on the seperate layouts, and said changes being reflected on the pages. It would be nice to have a top
 cont. level method doing some automated checking, but ultimately, its a time sink with marginal gains to it.
 I'll leave it commented for the time being, if I happen to change my mind while reading documentation  
+THOUGHTS 8/17/2024 5:03AM:
+I've had a change of heart with the directory, as well as latest updates, but mostly wiht directory. With the interests
+cont. of keeping the top kind of clear of anything but the center piece changing... thing, I'm gonna make it so that its
+cont. a kind of persisting navbar that will follow directory changes to any other part of the page besides when reading
+cont. a book. It should look good, and thematically would make more sense than having a rinky dink directory that goes 
+cont. to other parts of the page(which isn't really needed). As for the updates part, main idea remains, but I'm gonna 
+cont. have it persist as well.
+When it comes to whether or not its visible in the reading portion, the directory will but will instead be a minimized 
+cont. part. The new updates, however, will be void from the reading section altogether. I'd imagine it would be annoying
+cont. to see something like that.
 -->
 
 <template>
