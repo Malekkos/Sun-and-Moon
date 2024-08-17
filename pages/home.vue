@@ -68,9 +68,9 @@ cont. to see something like that.
         <body class="bodyWrapper">
           <div class="bodySectionDirecAndUpdates">
             <nav id="homePageDirectory">
-              <NuxtLink to="/home">Home</NuxtLink>
-              <NuxtLink to="/profile.vue">Profile</NuxtLink>
-              <NuxtLink to="/search.vue">Find a book</NuxtLink>
+              <NuxtLink class="link" to="/home">Home</NuxtLink>
+              <NuxtLink class="link" to="/profile.vue">Profile</NuxtLink>
+              <NuxtLink class="link" to="/search.vue">Find a book</NuxtLink>
             </nav>
             <div id="homePageLatestUpdates">
               <p>Placeholder for latest updates</p>
@@ -171,6 +171,15 @@ definePageMeta({
 }
 
 #homePageDirectory {
-  @apply flex bg-[#ffd03b] w-[10rem] flex-col;
+  @apply flex bg-[#ffd03b] w-[15rem] flex-col;
 }
+
+#homePageLatestUpdates {
+  @apply bg-[#ffd03b] w-[15rem];
+}
+
+.link {
+  @apply hover:bg-[#EEAC00] ml-2;
+}
+
 </style>
