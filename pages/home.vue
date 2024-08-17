@@ -138,7 +138,7 @@ definePageMeta({
 }
 
 .homePageSection {
-  @apply w-[45rem] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden;
+  @apply flex w-[45rem] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden border-[3px] border-[#996f14] rounded-md divide-x flex-row;
 }
 
 .bodySectionScroll,
@@ -151,7 +151,7 @@ definePageMeta({
 }
 
 .bodyHeader {
-  @apply text-[1.6rem] text-[#832A0D] top-[2rem] relative;
+  @apply text-[1.6rem] text-[#832A0D] top-[2rem] relative border-b-[2px] border-[#996f14];
 }
 
 .bodyTextSub {
