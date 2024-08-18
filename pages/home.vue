@@ -150,7 +150,7 @@ definePageMeta({
 }
 
 .homePageSection {
-  @apply flex w-[45rem] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden border-[3px] border-[#996f14] rounded-md divide-x flex-row;
+  @apply flex w-[50vw] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden border-[3px] border-[#996f14] rounded-md divide-x flex-row;
 }
 
 .bodySectionScroll,
