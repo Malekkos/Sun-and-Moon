@@ -150,7 +150,7 @@ definePageMeta({
 }
 
 .homePageSection {
-  @apply flex w-[50vw] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden border-[3px] border-[#996f14] rounded-md divide-x flex-row;
+  @apply flex w-[50vw] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden border-[#996f14] rounded-lg divide-x flex-row;
 }
 
 .bodySectionScroll,
@@ -171,7 +171,7 @@ definePageMeta({
 }
 
 #homePageDirectory {
-  @apply flex bg-[#ffd03b] w-[15rem] flex-col;
+  @apply flex w-[15rem] flex-col;
 }
 
 #homePageLatestUpdates {
@@ -179,7 +179,8 @@ definePageMeta({
 }
 
 .link {
-  @apply hover:bg-[#EEAC00] ml-2;
+  @apply transition-all ease-in-out hover:bg-[#ffd03b] hover:ml-[0.7rem] hover:border-l-[2px];
+  @apply ml-[0.5rem] border-[#EEAC00] pl-[1px]
 }
 
 </style>
