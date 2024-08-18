@@ -1,7 +1,9 @@
 <template>
   <div class="homeLayoutWrapper">
     <div class="navTop">
-      home layout ~ Home page top
+      <img src="../public/SUN.png"/>
+      <img src="../public/&.png"/>
+      <img src="../public/MOON.png"/>
     </div>
     <slot>
     </slot>
@@ -12,6 +14,7 @@
 </template>
 
 <script lang="ts" setup>
+
 
 </script>
 

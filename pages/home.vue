@@ -171,7 +171,7 @@ definePageMeta({
 }
 
 #homePageDirectory {
-  @apply flex w-[15rem] flex-col;
+  @apply flex w-[15rem] flex-col mb-[2rem];
 }
 
 #homePageLatestUpdates {
