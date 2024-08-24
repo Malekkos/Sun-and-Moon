@@ -186,5 +186,4 @@ definePageMeta({
   @apply transition-all ease-in-out hover:bg-[#ffd03b] hover:ml-[0.7rem] hover:border-l-[2px];
   @apply ml-[0.5rem] border-[#EEAC00] pl-[1px]
 }
-
 </style>
