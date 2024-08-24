@@ -5,6 +5,7 @@
       <img id="iconAnd" src="../public/&.png" />
       <img id="iconMoon" src="../public/MOON.png" />
     </div>
+    <div id="layerForSwitcher"></div>
     <button id="sunAndMoonSwitcher"><img src="../public/sunPicture.png" /></button>
     <slot>
     </slot>
@@ -36,7 +37,7 @@
 }
 
 #iconAnd {
-  @apply left-[3.2rem] top-[4rem] ;
+  @apply left-[3.2rem] top-[4rem] z-10;
 }
 
 #iconSun {
@@ -47,7 +48,11 @@
   @apply top-[5.2rem] left-[1.5rem];
 }
 
+#layerForSwitcher {
+  @apply absolute left-[37.4rem] w-[3.9rem] top-[6.8rem] bg-[gray] h-[4rem] z-0
+}
+
 #sunAndMoonSwitcher {
-  @apply absolute left-[37.7rem] w-[3.7rem] top-[6.8rem] h-[4rem];
+  @apply absolute left-[37.7rem] w-[3.7rem] top-[6.9rem] h-[4rem] z-20;
 }
 </style>
