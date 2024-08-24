@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@nuxtjs/fontaine": "^0.4.3",
-    "nuxt": "^3.12.4",
-    "vue": "^3.4.36"
+    "nuxt": "^3.13.0",
+    "vue": "^3.4.38"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.8"
+    "tailwindcss": "^3.4.10"
   }
 }
