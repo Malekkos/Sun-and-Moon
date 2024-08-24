@@ -135,6 +135,10 @@ definePageMeta({
   @apply w-full;
 }
 
+.mainWrapper {
+  @apply pt-[5rem]
+}
+
 .bodyWrapper {
   @apply w-full flex flex-row justify-between;
 }

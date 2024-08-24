@@ -1,9 +1,9 @@
 <template>
   <div class="homeLayoutWrapper">
     <div class="navTop">
-      <img src="../public/SUN.png"/>
-      <img src="../public/&.png"/>
-      <img src="../public/MOON.png"/>
+      <img id="iconSun" src="../public/SUN.png"/>
+      <img id="iconAnd" src="../public/&.png"/>
+      <img id="iconMoon" src="../public/MOON.png"/>
     </div>
     <slot>
     </slot>
@@ -27,4 +27,21 @@
   .homeLayoutWrapper {
     @apply w-full bg-[#FFE7B8];
   }
+
+  #iconAnd, #iconSun, #iconMoon {
+    @apply relative;
+  }
+
+  #iconAnd {
+    @apply left-[3.2rem] top-[4rem]
+  }
+
+  #iconSun {
+    @apply left-[4.2rem] top-[6.4rem]
+  }
+
+  #iconMoon {
+    @apply top-[5.2rem] left-[1.5rem]
+  }
+
 </style>
