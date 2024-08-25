@@ -43,29 +43,29 @@ The above is all inside of our composable.
 
 <!-- 
 THOUGHTS 8/10/2024 10:50PM:
-Currently, after having a peak at how Nuxt Layout works and defining it in meta, the correct measure seems to be having
+  Currently, after having a peak at how Nuxt Layout works and defining it in meta, the correct measure seems to be having
 cont. it change on the seperate layouts, and said changes being reflected on the pages. It would be nice to have a top
 cont. level method doing some automated checking, but ultimately, its a time sink with marginal gains to it.
-I'll leave it commented for the time being, if I happen to change my mind while reading documentation  
+  I'll leave it commented for the time being, if I happen to change my mind while reading documentation  
 THOUGHTS 8/17/2024 5:03AM:
-I've had a change of heart with the directory, as well as latest updates, but mostly wiht directory. With the interests
+  I've had a change of heart with the directory, as well as latest updates, but mostly wiht directory. With the interests
 cont. of keeping the top kind of clear of anything but the center piece changing... thing, I'm gonna make it so that its
 cont. a kind of persisting navbar that will follow directory changes to any other part of the page besides when reading
 cont. a book. It should look good, and thematically would make more sense than having a rinky dink directory that goes 
 cont. to other parts of the page(which isn't really needed). As for the updates part, main idea remains, but I'm gonna 
 cont. have it persist as well.
-When it comes to whether or not its visible in the reading portion, the directory will but will instead be a minimized 
+  When it comes to whether or not its visible in the reading portion, the directory will but will instead be a minimized 
 cont. part. The new updates, however, will be void from the reading section altogether. I'd imagine it would be annoying
 cont. to see something like that.
 THOUGHTS 8/25/2024 12:33AM:
-The Sun and Moon portion of the header, in my opinion, actually look nice. Its just the & that is causing some heartache.
+  The Sun and Moon portion of the header, in my opinion, actually look nice. Its just the & that is causing some heartache.
 cont. It just kinda looks bad. I vibe with the idea of the transition being insde of the &, but it wont work if it doesnt
 cont. look good. I'm thinking we can just do without the & and simply have the icons, with the implication that they stand
 cont. for &. I think it would work a lot better.
-The left side of the project, latest updates and directory, aren't conforming to width changes. Likely, the scroll wont either
-Another thing, the mid of the page is off center with the header portion. Sun is peaking out from the middle a bit more than moon.
+  The left side of the project, latest updates and directory, aren't conforming to width changes. Likely, the scroll wont either
+  Another thing, the mid of the page is off center with the header portion. Sun is peaking out from the middle a bit more than moon.
 cont. However, it should be fixed when we do the sizing changes on directory and LU
-Scroll is on the chopping block for today, rather than removing the &. We are gonna have it unfurl out... hopefully haha. We are gonna
+  Scroll is on the chopping block for today, rather than removing the &. We are gonna have it unfurl out... hopefully haha. We are gonna
 cont. include the introduction to the site, tech-stack currently used, as well as a hint on how to change the site theme(clicking on the
 cont. sun in the middle of the words SUN and MOON)
 -->
