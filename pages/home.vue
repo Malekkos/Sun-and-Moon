@@ -173,9 +173,12 @@ definePageMeta({
   @apply flex w-[50vw] h-[20rem] mt-10 bg-[#EEAC00] overflow-hidden border-[#996f14] rounded-lg divide-x flex-row;
 }
 
-.bodySectionScroll,
 .bodySectionDirecAndUpdates {
   @apply w-[20%];
+}
+
+.bodySectionScroll {
+  @apply w-[25%];
 }
 
 .bodySectionDirecAndUpdates {
