@@ -57,7 +57,19 @@ cont. have it persist as well.
 When it comes to whether or not its visible in the reading portion, the directory will but will instead be a minimized 
 cont. part. The new updates, however, will be void from the reading section altogether. I'd imagine it would be annoying
 cont. to see something like that.
+THOUGHTS 8/25/2024 12:33AM:
+The Sun and Moon portion of the header, in my opinion, actually look nice. Its just the & that is causing some heartache.
+cont. It just kinda looks bad. I vibe with the idea of the transition being insde of the &, but it wont work if it doesnt
+cont. look good. I'm thinking we can just do without the & and simply have the icons, with the implication that they stand
+cont. for &. I think it would work a lot better.
+The left side of the project, latest updates and directory, aren't conforming to width changes. Likely, the scroll wont either
+Another thing, the mid of the page is off center with the header portion. Sun is peaking out from the middle a bit more than moon.
+cont. However, it should be fixed when we do the sizing changes on directory and LU
+Scroll is on the chopping block for today, rather than removing the &. We are gonna have it unfurl out... hopefully haha. We are gonna
+cont. include the introduction to the site, tech-stack currently used, as well as a hint on how to change the site theme(clicking on the
+cont. sun in the middle of the words SUN and MOON)
 -->
+
 
 <template>
   <NuxtLayout>

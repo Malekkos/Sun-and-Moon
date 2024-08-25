@@ -50,7 +50,7 @@
 }
 
 #iconMoon {
-  @apply top-[5.2rem] right-[2.4rem];
+  @apply top-[5.2rem] right-[6.1rem];
 }
 
 #layerForSwitcher {
