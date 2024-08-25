@@ -3,9 +3,8 @@
     <div class="navTop">
       <img id="iconSun" src="../public/SUN.png" />
       <img id="iconAnd" src="../public/&.png" />
-      <div id="layerForSwitcher">
-        <button id="sunAndMoonSwitcher"><img src="../public/sunPicture.png" /></button>
-      </div>
+      <div id="layerForSwitcher"></div>
+      <button @click="onClick" id="sunAndMoonSwitcher"><img src="../public/sunPicture.png" /></button>
       <img id="iconMoon" src="../public/MOON.png" />
     </div>
     <slot>
@@ -17,6 +16,11 @@
 </template>
 
 <script lang="ts" setup>
+
+  const onClick = () => {
+    console.log("clicked the button")
+  }
+
 
 
 </script>
@@ -38,7 +42,7 @@
 }
 
 #iconAnd {
-  @apply left-[3.2rem] top-[4rem] z-10;
+  @apply left-[3.2rem] top-[4rem] z-20;
 }
 
 #iconSun {
@@ -50,10 +54,10 @@
 }
 
 #layerForSwitcher {
-  @apply relative right-[4.4rem] w-[3.9rem] top-[6.4rem] bg-[gray] h-[4rem] z-0
+  @apply relative right-[4.4rem] w-[3.9rem] top-[6.4rem] bg-[gray] h-[4rem] z-10
 }
 
 #sunAndMoonSwitcher {
-  @apply relative left-[0.5rem] w-[3.7rem] h-[4rem] z-20;
+  @apply relative right-[7.9rem] top-[6.4rem] w-[3.7rem] h-[4rem] z-30;
 }
 </style>
