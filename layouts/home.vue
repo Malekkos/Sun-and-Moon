@@ -3,10 +3,11 @@
     <div class="navTop">
       <img id="iconSun" src="../public/SUN.png" />
       <img id="iconAnd" src="../public/&.png" />
+      <div id="layerForSwitcher">
+        <button id="sunAndMoonSwitcher"><img src="../public/sunPicture.png" /></button>
+      </div>
       <img id="iconMoon" src="../public/MOON.png" />
     </div>
-    <div id="layerForSwitcher"></div>
-    <button id="sunAndMoonSwitcher"><img src="../public/sunPicture.png" /></button>
     <slot>
     </slot>
     <div class="navBottom">
@@ -45,14 +46,14 @@
 }
 
 #iconMoon {
-  @apply top-[5.2rem] left-[1.5rem];
+  @apply top-[5.2rem] right-[2.4rem];
 }
 
 #layerForSwitcher {
-  @apply absolute left-[37.4rem] w-[3.9rem] top-[6.8rem] bg-[gray] h-[4rem] z-0
+  @apply relative right-[4.4rem] w-[3.9rem] top-[6.4rem] bg-[gray] h-[4rem] z-0
 }
 
 #sunAndMoonSwitcher {
-  @apply absolute left-[37.7rem] w-[3.7rem] top-[6.9rem] h-[4rem] z-20;
+  @apply relative left-[0.5rem] w-[3.7rem] h-[4rem] z-20;
 }
 </style>
