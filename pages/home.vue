@@ -59,7 +59,7 @@ cont. part. The new updates, however, will be void from the reading section alto
 cont. to see something like that.
 THOUGHTS 8/25/2024 12:33AM:
   The Sun and Moon portion of the header, in my opinion, actually look nice. Its just the & that is causing some heartache.
-cont. It just kinda looks bad. I vibe with the idea of the transition being insde of the &, but it wont work if it doesnt
+cont. It just kinda looks bad. I vibe with the idea of the transition being inside of the &, but it wont work if it doesnt
 cont. look good. I'm thinking we can just do without the & and simply have the icons, with the implication that they stand
 cont. for &. I think it would work a lot better.
   The left side of the project, latest updates and directory, aren't conforming to width changes. Likely, the scroll wont either
@@ -126,7 +126,11 @@ cont. sun in the middle of the words SUN and MOON)
             </div>
           </main>
           <div class="bodySectionScroll">
-            <p>Placeholder for Scroll</p>
+            <div class="scrollWrapper">
+              <img id="papScrollTop" src="../public/papScrollTop.png"/>
+              <img id="papScrollMid" src="../public/papScrollMid.png"/>
+              <img id="papScrollBot" src="../public/papScrollBot.png"/>
+            </div>
           </div>
         </body>
       </div>
@@ -196,6 +200,18 @@ definePageMeta({
 
 .link {
   @apply transition-all ease-in-out hover:bg-[#ffd03b] hover:ml-[0.7rem] hover:border-l-[2px];
-  @apply ml-[0.5rem] border-[#EEAC00] pl-[1px]
+  @apply ml-[0.5rem] border-[#EEAC00] pl-[1px];
+}
+
+.scrollWrapper {
+  @apply flex flex-col items-center;
+}
+
+#papScrollMid {
+  @apply w-[63.4%] h-[30rem];
+}
+
+#papScrollBot {
+  @apply w-[100%]
 }
 </style>
