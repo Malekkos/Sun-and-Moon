@@ -126,10 +126,10 @@ cont. sun in the middle of the words SUN and MOON)
             </div>
           </main>
           <div class="bodySectionScroll">
-            <div class="scrollWrapper">
-              <img id="papScrollTop" @click="extendScroll(123)" src="../public/papScrollTop.png"/>
-              <img id="papScrollMid" src="../public/papScrollMid.png"/>
-              <img id="papScrollBot" src="../public/papScrollBot.png"/>
+            <div class="scrollWrapper"> <!--@click="extendScroll" -->
+              <img id="papScrollTop"src="../public/papScrollTop.png" />
+              <img id="papScrollMid" src="../public/papScrollMid.png" />
+              <img id="papScrollBot" class="" src="../public/papScrollBot.png" />
             </div>
           </div>
         </body>
@@ -146,10 +146,16 @@ definePageMeta({
 })
 
 
-  const extendScroll = (loc: number) => {
-    const yCord = 0
-    console.log("ran this function.", " This is the location: ", loc)
-  }
+// const extendScroll = () => {
+//   let furl = 30
+//   let bottomScroll = document.getElementById("papScrollBot")
+//   console.log(bottomScroll?.classList)
+//   while (furl !== 0) {
+//       bottomScroll.className = (`bottom-[${furl}rem]`)
+//       furl--
+//   }
+//   console.log("ran this function")
+// }
 
 </script>
 
@@ -222,6 +228,12 @@ definePageMeta({
 }
 
 #papScrollBot {
-  @apply w-[100%] pb-[30rem] overflow-hidden bottom-[30rem] bg-[#FFE7B8] relative z-30;
+  @apply w-[100%] pb-[30rem] bottom-[30rem] overflow-hidden bg-[#FFE7B8] relative z-30 transition-[transform] ease-out duration-[1.5s];
 }
+
+.scrollWrapper:hover {
+  #papScrollBot {
+    @apply translate-y-[30rem]
+    }
+  }
 </style>
