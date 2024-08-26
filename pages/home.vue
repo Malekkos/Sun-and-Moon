@@ -127,7 +127,7 @@ cont. sun in the middle of the words SUN and MOON)
           </main>
           <div class="bodySectionScroll">
             <div class="scrollWrapper">
-              <img id="papScrollTop" src="../public/papScrollTop.png"/>
+              <img id="papScrollTop" @click="extendScroll(123)" src="../public/papScrollTop.png"/>
               <img id="papScrollMid" src="../public/papScrollMid.png"/>
               <img id="papScrollBot" src="../public/papScrollBot.png"/>
             </div>
@@ -144,6 +144,13 @@ definePageMeta({
   title: "Home page of Sun & Moon",
   layout: "home",
 })
+
+
+  const extendScroll = (loc: number) => {
+    const yCord = 0
+    console.log("ran this function.", " This is the location: ", loc)
+  }
+
 </script>
 
 <style lang="postcss" scoped>
@@ -211,10 +218,10 @@ definePageMeta({
 }
 
 #papScrollMid {
-  @apply w-[63.4%] h-[30rem];
+  @apply w-[63.4%] h-[30rem] z-0;
 }
 
 #papScrollBot {
-  @apply w-[100%]
+  @apply w-[100%] pb-[30rem] overflow-hidden bottom-[30rem] bg-[#FFE7B8] relative z-30;
 }
 </style>
