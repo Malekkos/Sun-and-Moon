@@ -131,6 +131,9 @@ cont. sun in the middle of the words SUN and MOON)
               <img id="papScrollMid" src="../public/papScrollMid.png" />
               <img id="papScrollBot" class="" src="../public/papScrollBot.png" />
             </div>
+            <div class="scrollText">
+              <p class="innerTextScroll">Welcome to this website! This is a demo site, taking inspiration from modern novel hosting sites.<br /> The fun of this project was not using a single thing I was familiar with. AKA, I'm using vue & nuxt, typescript technically, Tailwind, and .net with C#. All are things I've never used before! <br /> Click the icon between Sun and Moon to see the main feature of this site</p>
+            </div>
           </div>
         </body>
       </div>
@@ -160,6 +163,9 @@ definePageMeta({
 </script>
 
 <style lang="postcss" scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+
 #main .mainWrapper {
   @apply w-full;
 }
@@ -224,16 +230,24 @@ definePageMeta({
 }
 
 #papScrollMid {
-  @apply w-[63.4%] h-[30rem] z-0;
+  @apply w-[63.4%] h-[40rem] z-0;
 }
 
 #papScrollBot {
-  @apply w-[100%] pb-[30rem] bottom-[30rem] overflow-hidden bg-[#FFE7B8] relative z-30 transition-[transform] ease-out duration-[1.5s];
+  @apply w-[100%] pb-[40rem] bottom-[40rem] overflow-hidden bg-[#FFE7B8] relative z-30 transition-[transform] ease-out duration-[1.5s];
 }
 
 .scrollWrapper:hover {
   #papScrollBot {
-    @apply translate-y-[30rem]
+    @apply translate-y-[40rem]
     }
+  }
+
+  .scrollText {
+    @apply w-[60%] z-20 bottom-[80rem] relative pointer-events-none text-center;
+  }
+ 
+  .innerTextScroll {
+    @apply font-['Kavivanar']
   }
 </style>
