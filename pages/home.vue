@@ -68,6 +68,15 @@ cont. However, it should be fixed when we do the sizing changes on directory and
   Scroll is on the chopping block for today, rather than removing the &. We are gonna have it unfurl out... hopefully haha. We are gonna
 cont. include the introduction to the site, tech-stack currently used, as well as a hint on how to change the site theme(clicking on the
 cont. sun in the middle of the words SUN and MOON)
+THOUGHTS 8/27/2024 3:45AM:
+  Got the scroll pretty much figured out, was easier than I thought. The only issue is that at around 930px screen width, the text goes 
+cont. offscreen. At that point, I think it would just be better to remove the scroll altogether. Would just make more sense overall. I 
+cont. still have some work to do with the text itself, some more font modifiers, but its practically done. Next, what we need to do is
+cont. finish the latest updates thing(or create a box), and then we have some choices. I could either A. Keep filling out this page, which
+cont. is probably a no because I kind of want my database finished before that(cus we still aren't sure WHAT data we are gonna be consuming)
+cont. . B. Work on fleshing out the other pages in the project. A good deal more realistic, Its just groundworks. or C., step into the belly
+cont. of the beast and start creating a server with .net and C#... yikes. It's a hard sell.
+
 -->
 
 
