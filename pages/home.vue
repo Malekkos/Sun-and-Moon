@@ -93,6 +93,7 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
               <NuxtLink class="link" to="/profile.vue">Profile</NuxtLink>
               <NuxtLink class="link" to="/search.vue">Find a book</NuxtLink>
             </nav>
+            <header class="LUHeader">Latest Updates</header>
             <div id="homePageLatestUpdates">
               <p>Placeholder for latest updates</p>
             </div>
@@ -136,12 +137,15 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
           </main>
           <div class="bodySectionScroll">
             <div class="scrollWrapper"> <!--@click="extendScroll" -->
-              <img id="papScrollTop"src="../public/papScrollTop.png" />
+              <img id="papScrollTop" src="../public/papScrollTop.png" />
               <img id="papScrollMid" src="../public/papScrollMid.png" />
               <img id="papScrollBot" class="" src="../public/papScrollBot.png" />
             </div>
             <div class="scrollText">
-              <p class="innerTextScroll">Welcome to this website! This is a demo site, taking inspiration from modern novel hosting sites.<br /> The fun of this project was not using a single thing I was familiar with. AKA, I'm using vue & nuxt, typescript technically, Tailwind, and .net with C#. All are things I've never used before! <br /> Click the icon between Sun and Moon to see the main feature of this site</p>
+              <p class="innerTextScroll">Welcome to this website! This is a demo site, taking inspiration from modern
+                novel hosting sites.<br /> The fun of this project was not using a single thing I was familiar with.
+                AKA, I'm using vue & nuxt, typescript technically, Tailwind, and .net with C#. All are things I've never
+                used before! <br /> Click the icon between Sun and Moon to see the main feature of this site</p>
             </div>
           </div>
         </body>
@@ -172,7 +176,6 @@ definePageMeta({
 </script>
 
 <style lang="postcss" scoped>
-
 @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 
 #main .mainWrapper {
@@ -226,7 +229,11 @@ definePageMeta({
 }
 
 #homePageLatestUpdates {
-  @apply bg-[#ffd03b] w-[15rem];
+  @apply bg-[#EEAC00] w-[15rem] h-[20rem] rounded-lg;
+}
+
+.LUHeader {
+  @apply text-[1.3rem] text-[#823A0D] border-b-[2px] border-[#996f14] mb-[0.2rem] w-[15rem]
 }
 
 .link {
@@ -249,14 +256,14 @@ definePageMeta({
 .scrollWrapper:hover {
   #papScrollBot {
     @apply translate-y-[40rem]
-    }
   }
+}
 
-  .scrollText {
-    @apply w-[60%] z-20 bottom-[80rem] relative pointer-events-none text-center;
-  }
- 
-  .innerTextScroll {
-    @apply font-['Kavivanar']
-  }
+.scrollText {
+  @apply w-[60%] z-20 bottom-[80rem] relative pointer-events-none text-center;
+}
+
+.innerTextScroll {
+  @apply font-['Kavivanar']
+}
 </style>
