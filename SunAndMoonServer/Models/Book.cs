@@ -1,4 +1,4 @@
-namespace Book.Models
+namespace Book.Models;
 
 public class BookInfo
 {
