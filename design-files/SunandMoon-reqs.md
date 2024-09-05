@@ -5,7 +5,7 @@ Tech Used ~
  _Backend_
 	Asp.Net
 	C#(for asp)
-	MS Sql Server
+	PostgreSQL
  _Frontend_
 	Vue.js
 	~ Extensions off vue to use:
