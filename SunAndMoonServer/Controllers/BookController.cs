@@ -9,7 +9,7 @@ using Book.Models;
 
 namespace SunAndMoonServer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Book")]
     [ApiController]
     public class BookController : ControllerBase
     {
@@ -80,7 +80,7 @@ namespace SunAndMoonServer.Controllers
             _context.Books.Add(bookInfo);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetBookInfo", new { id = bookInfo.Id }, bookInfo);
+            return CreatedAtAction(nameof(GetBookInfo), new { id = bookInfo.Id }, bookInfo);
         }
 
         // DELETE: api/Book/5
