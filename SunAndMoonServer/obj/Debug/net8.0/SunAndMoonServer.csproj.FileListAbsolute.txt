@@ -252,3 +252,11 @@ C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAn
 C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Npgsql.dll
+C:\Users\TehNi\Documents\Learning Materials\Personal Projects\Sun-and-Moon\SunAndMoonServer\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SunAndMoonServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64b0c9b730127d086f0053a430d9369780d7546f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18db0f1eee1e99be8a14bea29565d58105dfd04a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SunAndMoonServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SunAndMoonServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
