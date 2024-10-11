@@ -1,75 +1,11 @@
-# Nuxt 3 Minimal Starter
+<h4>Readme being used to store plans to remind myself, will update when project is near/fully finished.</h4>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<h1>TODO</h1>
+<b><em>10/11/2024</em></b>
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<ul>
+  <li>Checkout PostgreSQL, as well as see how it would be able to connect to a asp.net core backend</li>
+  <li>Determine how we should be saving images in the database</li>
+  <li>Cut down/reshape some of the controllers methods so that it can send appropriate responses in terms of data</li>
+  <li>Work the front-end, specifically homepage, to make calls to back and get the information needed</li>
+</ul>
