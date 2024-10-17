@@ -86,7 +86,7 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
       <div class="mainWrapper">
         <!-- <div class="logoWrapper"></div> -->
 
-        <body class="bodyWrapper">
+        <div class="bodyWrapper">
           <div class="bodySectionDirecAndUpdates">
             <nav id="homePageDirectory">
               <NuxtLink class="link" to="/home">Home</NuxtLink>
@@ -148,7 +148,7 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
                 used before! <br /> Click the icon between Sun and Moon to see the main feature of this site</p>
             </div>
           </div>
-        </body>
+        </div>
       </div>
     </div>
   </NuxtLayout>
@@ -161,17 +161,9 @@ definePageMeta({
   layout: "home",
 })
 
+const { data } = await useAsyncData("item", () => $fetch("https://localhost:7240/api/BookAPI", {method: "GET"}))
 
-// const extendScroll = () => {
-//   let furl = 30
-//   let bottomScroll = document.getElementById("papScrollBot")
-//   console.log(bottomScroll?.classList)
-//   while (furl !== 0) {
-//       bottomScroll.className = (`bottom-[${furl}rem]`)
-//       furl--
-//   }
-//   console.log("ran this function")
-// }
+console.log("this is the data from the API: ", data._rawValue)
 
 </script>
 
