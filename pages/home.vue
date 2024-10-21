@@ -156,13 +156,13 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
 
 <script lang="ts" setup>
 
+
 definePageMeta({
   title: "Home page of Sun & Moon",
   layout: "home",
 })
 
-const { data } = await useAsyncData("item", () => $fetch("https://localhost:7240/api/BookAPI", {method: "GET"}))
-
+const { data } = await useAsyncData("item", () => $fetch("https://localhost:7240/api/BookAPI").catch(err => { console.log(err)}))
 console.log("this is the data from the API: ", data._rawValue)
 
 </script>
