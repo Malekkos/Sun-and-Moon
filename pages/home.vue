@@ -102,8 +102,14 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
             <div>
               <header class="bodyHeader">Featured</header>
               <div class="homePageSection">
-                <p class="bodyTextImportant">Placeholder for Featured</p>
-                <p class="bodyTextSub">Text for sub</p>
+                <div v-for="book in bookInfo">
+                  {{ console.log(book) }}
+                  <h5>{{book.title}}</h5>
+                </div>
+                <div>
+                  <p class="bodyTextImportant"></p>
+                  <p class="bodyTextSub">Text for sub</p>
+                </div>
               </div>
             </div>
             <div>
@@ -156,14 +162,21 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
 
 <script lang="ts" setup>
 
+let bookInfo: any = []
 
 definePageMeta({
   title: "Home page of Sun & Moon",
   layout: "home",
 })
 
-const { data } = await useAsyncData("item", () => $fetch("https://localhost:7240/api/BookAPI").catch(err => { console.log(err)}))
-console.log("this is the data from the API: ", data._rawValue)
+await useAsyncData("item", () =>
+  $fetch("https://localhost:7240/api/BookAPI")
+  .then(res => {
+    console.log("this is the response:", res)
+    bookInfo = res
+  })
+  .catch(err => { console.log(err) })
+)
 
 </script>
 
