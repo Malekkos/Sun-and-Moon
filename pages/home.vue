@@ -102,13 +102,12 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
             <div>
               <header class="bodyHeader">Featured</header>
               <div class="homePageSection">
-                <div v-for="book in bookInfo">
+                <div v-for="{book, index} in bookInfo.slice(0, 3)">
+                  <!-- THE ABOVE ".slice(0, 3)" IS BAD, ONLY FOR TESTING. MAKE THE ACTUAL CHANGES HAPPEN WITH THE CALL -->
                   {{ console.log(book) }}
-                  <h5>{{book.title}}</h5>
-                </div>
-                <div>
-                  <p class="bodyTextImportant"></p>
-                  <p class="bodyTextSub">Text for sub</p>
+                  <img src="../public/SoyTulips.jpg"/> <!-- for custom image, until blob storage implemented -->
+                  <h5>{{ book.title }}</h5>
+                  <h6>{{ book.description }}</h6>
                 </div>
               </div>
             </div>
