@@ -102,12 +102,12 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
             <div>
               <header class="bodyHeader">Featured</header>
               <div class="homePageSection">
-                <div v-for="{book, index} in bookInfo.slice(0, 3)">
+                <div v-for="{book, index} in bookInfo">
                   <!-- THE ABOVE ".slice(0, 3)" IS BAD, ONLY FOR TESTING. MAKE THE ACTUAL CHANGES HAPPEN WITH THE CALL -->
-                  {{ console.log(book) }}
+                  {{ console.log("this is the book: ", book, " this is the index: ", index) }}
                   <img src="../public/SoyTulips.jpg"/> <!-- for custom image, until blob storage implemented -->
-                  <h5>{{ book.title }}</h5>
-                  <h6>{{ book.description }}</h6>
+                  <h5>{{ book ? book.title : "nothing here!" }}</h5>
+                  <h6>{{ book ? book.description : "nothing here!"}}</h6>
                 </div>
               </div>
             </div>
@@ -161,21 +161,23 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
 
 <script lang="ts" setup>
 
-let bookInfo: any = []
-
+let bookInfo: any = ref(fetchBookInfo())
 definePageMeta({
   title: "Home page of Sun & Moon",
   layout: "home",
 })
 
-await useAsyncData("item", () =>
+async function fetchBookInfo() {
+  await useAsyncData("item", () =>
   $fetch("https://localhost:7240/api/BookAPI")
   .then(res => {
     console.log("this is the response:", res)
-    bookInfo = res
+    console.log("this is the book info in the call:", bookInfo.value)
+    return res
   })
   .catch(err => { console.log(err) })
 )
+}
 
 </script>
 
