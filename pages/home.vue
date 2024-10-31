@@ -158,8 +158,12 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
 </template>
 
 <script lang="ts" setup>
-
 import { useBookStore } from "../stores/bookStore"
+
+definePageMeta({
+  layout: "home"
+})
+
 
 const bookInfo: any = reactive(useBookStore())
 

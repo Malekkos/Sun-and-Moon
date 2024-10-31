@@ -21,8 +21,6 @@
     console.log("clicked the button")
   }
 
-
-
 </script>
 
 <style lang="postcss" scoped>
