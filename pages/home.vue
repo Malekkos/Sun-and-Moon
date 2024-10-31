@@ -103,8 +103,6 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
               <header class="bodyHeader">Featured</header>
               <div class="homePageSection">
                 <div v-for="book in toRaw(bookInfo.standard)">
-                  <!-- THE ABOVE ".slice(0, 3)" IS BAD, ONLY FOR TESTING. MAKE THE ACTUAL CHANGES HAPPEN WITH THE CALL -->
-                  {{ console.log("this is the book: ", book) }}
                   <img src="../public/SoyTulips.jpg"/> <!-- for custom image, until blob storage implemented -->
                   <h5>{{ book.title }}</h5>
                   <h6>{{ book }}</h6>
@@ -160,42 +158,12 @@ cont. of the beast and start creating a server with .net and C#... yikes. It's a
 </template>
 
 <script lang="ts" setup>
+
 import { useBookStore } from "../stores/bookStore"
-// export const useBookStore = defineStore("book", {
-//   state: () => {
-//     return {
-//       standard: {},
-//       bookOne: {title: "", description: ""},
-//       bookTwo: {title: "", description: ""},
-//       bookThree: {title: "", description: ""},
-//       bookFour: {title: "", description: ""},
-//     }
-//   },
-//   actions: {
-//     async fetchBooks() {
-//         this.standard = await useAsyncData("item", () => $fetch("https://localhost:7240/api/BookApi"))
-//     }
-//   }
-// })
 
-
-let bookInfo = reactive(useBookStore())
+const bookInfo: any = reactive(useBookStore())
 
 await callOnce(bookInfo.fetchBooks)
-// await 
-console.log("this is the book info in script:", toRaw(bookInfo.standard))
-setTimeout(()=> {console.log(toRaw(bookInfo.standard))}, 5000)
-// async function fetchBookInfo() {
-//   await useAsyncData("item", () =>
-//   $fetch("https://localhost:7240/api/BookAPI")
-//   .then(res => {
-//     console.log("this is the response:", res)
-//     console.log("this is the book info in the call:", bookInfo.value)
-//     return res
-//   })
-//   .catch(err => { console.log(err) })
-// )
-// }
 
 </script>
 
